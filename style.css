@@ -1,64 +1,364 @@
-body {
-    font-family: Arial, sans-serif;
+/* ===========================
+   DARK GOTHIC WEBSITE THEME
+   =========================== */
+
+
+* {
     margin: 0;
-    background: #f4f4f4;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+
+/* Main Page */
+
+body {
+
+    font-family: "Cinzel", serif;
+
+    background:
+    radial-gradient(circle at top, #222 0%, #000 60%);
+
+    color: #ffffff;
+
+    min-height: 100vh;
+}
+
+
+/* Main Gothic Title */
+
+h1, h2 {
+
+    font-family: "UnifrakturCook", serif;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+    0 0 10px #777;
+
+}
+
+
+/* Header */
 
 header {
-    background: #222;
+
+    background: #000;
+
     color: white;
+
     text-align: center;
-    padding: 40px;
+
+    padding: 50px;
+
+    border-bottom: 2px solid #555;
+
+    box-shadow:
+    0 5px 20px rgba(255,255,255,0.1);
+
 }
 
 
+/* Navigation */
+
 nav {
-    background: #444;
-    padding: 15px;
-    text-align: center;
+
+    background: rgba(10,10,10,0.95);
+
+    padding: 20px;
+
+    text-align:center;
+
+    border-bottom:1px solid #444;
+
 }
 
 
 nav a {
+
     color:white;
+
     text-decoration:none;
+
     margin:20px;
+
+    font-size:18px;
+
+    transition:0.3s;
+
 }
 
+
+nav a:hover {
+
+    color:#aaa;
+
+    text-shadow:
+    0 0 10px white;
+
+}
+
+
+
+/* Sections */
 
 section {
-    padding:40px;
+
+    padding:50px;
+
+    background:transparent;
+
 }
 
+
+
+/* Cards */
 
 .card {
-    background:white;
-    padding:20px;
-    margin:20px;
-    border-radius:10px;
-    box-shadow:0 2px 5px gray;
+
+    background:
+
+    linear-gradient(
+    145deg,
+    #111,
+    #050505
+    );
+
+
+    color:white;
+
+    padding:30px;
+
+    margin:25px;
+
+    border:
+
+    1px solid #555;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 0 20px rgba(255,255,255,0.08);
+
+
+    transition:0.4s;
+
 }
+
+
+.card:hover {
+
+    transform:translateY(-10px);
+
+    border-color:white;
+
+
+    box-shadow:
+
+    0 0 25px rgba(255,255,255,0.3);
+
+}
+
+
+
+/* Paragraph Text */
+
+p {
+
+    line-height:1.8;
+
+    color:#ddd;
+
+}
+
+
+
+/* Buttons */
 
 
 button {
-    padding:10px 20px;
-    background:#222;
+
+    font-family:"Cinzel", serif;
+
+
+    padding:
+
+    12px 30px;
+
+
+    background:#000;
+
+
     color:white;
-    border:none;
+
+
+    border:
+
+    1px solid #aaa;
+
+
+    border-radius:5px;
+
+
     cursor:pointer;
+
+
+    transition:0.3s;
+
+
 }
+
 
 
 button:hover {
-    background:#555;
+
+
+    background:white;
+
+
+    color:black;
+
+
+    box-shadow:
+
+    0 0 20px white;
+
+
 }
 
 
-footer {
-    text-align:center;
-    background:#222;
+
+/* Images */
+
+
+img {
+
+
+    max-width:100%;
+
+
+    border-radius:10px;
+
+
+    border:1px solid #555;
+
+
+}
+
+
+
+/* Links */
+
+
+a {
+
+    color:#ddd;
+
+}
+
+
+a:hover {
+
     color:white;
-    padding:20px;
+
+}
+
+
+
+/* Footer */
+
+
+footer {
+
+
+    text-align:center;
+
+
+    background:#000;
+
+
+    color:white;
+
+
+    padding:30px;
+
+
+    border-top:
+
+    2px solid #444;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+/* Scrollbar Gothic Style */
+
+
+::-webkit-scrollbar {
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+    background:#000;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:#555;
+
+    border-radius:10px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:#aaa;
+
+}
+
+
+
+/* Mobile Design */
+
+
+@media(max-width:768px){
+
+
+    header {
+
+        padding:30px;
+
+    }
+
+
+    nav a {
+
+        display:block;
+
+        margin:15px;
+
+    }
+
+
+    section {
+
+        padding:25px;
+
+    }
+
+
 }
